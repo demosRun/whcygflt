@@ -1,0 +1,79 @@
+<template>
+  <div class="title-bar">
+    <nav class="clear">
+      <div class="img-box">
+        <img src="@&logo.png&"></img>
+      </div>
+      <a class="active" target="_blank" href="http://www.people.com.cn/">首页</a>
+      <a target="_blank" @for="item in data.itemLiat" href="{{item.url}}">{{item.name}}</a>
+    </nav>
+  </div>
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      itemLiat: [
+        {"name": "关于论坛", "url": "http://www.people.com.cn/"},
+        {"name": "出席嘉宾", "url": "http://www.people.com.cn/"},
+        {"name": "论坛议程", "url": "http://www.people.com.cn/"},
+        {"name": "案例评选", "url": "http://www.people.com.cn/"},
+        {"name": "我要参加", "url": "http://www.people.com.cn/"},
+        {"name": "支持单位", "url": "http://www.people.com.cn/"},
+        {"name": "交通指南", "url": "http://www.people.com.cn/"},
+      ]
+    }
+  }
+</script>
+
+<style lang="less">
+.title-bar {
+  font-size: 18px;
+  height: 80px;
+  line-height: 80px;
+  position: relative;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2d2d2d;
+  nav {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .active {
+    color: #fff7a8;
+  }
+  .active:before {
+    content: "■";
+    padding-right: 10px;
+  }
+  .img-box {
+    position: relative;
+    width: 260px;
+    height: 80px;
+    float: left;
+    img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  a {
+    color: white;
+    display: block;
+    float: left;
+    margin: 0 15px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: white;
+  }
+
+}
+
+</style>

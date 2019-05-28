@@ -1,0 +1,401 @@
+<template>
+  <div class="home">
+    <temple name="title" src="./src/module/title.owo"></temple>
+    <!-- 主要内容区域 -->
+    <div class="home-content clear">
+      <div class="top">
+        <h1>文化创意高峰论坛</h1>
+        <h3>探索文创新路径  •  发展新势能</h3>
+        <p>文化发展进入新时期，人民网作为党和国家治国理政的重要资源，应充分发挥文化辐射平台作用。由人民日报指导，人民网主办的以“文化高质量发展”为主题的文化创意高峰论坛计划于2019年年中举办，邀请政府机构、专家学者、从业人员聚焦全球视野下文化中国的发展，探索文创新路径，发展新势能。论坛上将发布文创榜单，榜单拟按文创热点事件、文创空间等维度，依据权威第三方大数据为基础，资深专家团队专业评审得出。并征集文化优秀案例。</p>
+        <a href="http://people.com.cn" class="more">了解一下</a>
+      </div>
+      <temple name="titleBar" headline="论坛概况" subtitle="Forum overview" src="./src/module/titleBar.owo"></temple>
+      <!-- 论坛概况区域 -->
+      <ul class="survey">
+        <li><strong>指导单位:</strong>人民日报社</li>
+        <li><strong>主办单位:</strong>主办单位</li>
+        <li><strong>协办单位:</strong>中国互联网发展基金会、中国新产业联盟、地方政府等</li>
+        <li><strong>活动主题:</strong>文化高质量发展</li>
+        <li><strong>活动时间:</strong>2019年年中</li>
+        <li><strong>活动地点:</strong>【待定】</li>
+        <li><strong>参会规模:</strong>200人</li>
+      </ul>
+
+      <temple name="titleBar" headline="出席嘉宾" subtitle="Attending guests" src="./src/module/titleBar.owo"></temple>
+
+    </div>
+    <!-- 照片墙 -->
+    <div class="photo-box clear">
+      <temple name="peopleBox" src="./src/module/peopleBox.owo"></temple>
+      <temple name="peopleBox" src="./src/module/peopleBox.owo"></temple>
+      <temple name="peopleBox" src="./src/module/peopleBox.owo"></temple>
+      <temple name="peopleBox2" src="./src/module/peopleBox2.owo"></temple>
+      <temple name="peopleBox2" src="./src/module/peopleBox2.owo"></temple>
+      <temple name="peopleBox2" src="./src/module/peopleBox2.owo"></temple>
+      <temple name="peopleBox" src="./src/module/peopleBox.owo"></temple>
+      <temple name="peopleBox" src="./src/module/peopleBox.owo"></temple>
+      <temple name="peopleBox" src="./src/module/peopleBox.owo"></temple>
+      <temple name="peopleBox2" src="./src/module/peopleBox2.owo"></temple>
+      <temple name="peopleBox2" src="./src/module/peopleBox2.owo"></temple>
+      <temple name="peopleBox2" src="./src/module/peopleBox2.owo"></temple>
+    </div>
+
+    <div class="home-content">
+      <a href="http://people.com.cn" class="black-button">查看所有参与嘉宾</a>
+      <temple name="titleBar" headline="论坛议程" subtitle="Forum agenda" src="./src/module/titleBar.owo"></temple>
+      <!-- 论坛议程表格 -->
+      <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+        <tr>
+          <th>时间</th>
+          <th>会议环节</th>
+          <th>安排</th>
+        </tr>
+        <tr>
+          <td rowspan="3"><strong>上午</strong></td>
+          <td>开幕式--领导致辞</td>
+          <td>开幕式--领导致辞<br/>人民网领导致辞</td>
+        </tr>
+        <tr>
+          <td>主论坛：主旨发言</td>
+          <td>3-5人，主题方向：<br/>范周：文化产业政策及城<br/>市文旅规划<br/>魏鹏举：文化产业经济<br/>陈少峰：文化产业的商业模式</td>
+        </tr>
+        <tr>
+          <td>榜单、案例发布</td>
+          <td>文创热点事件榜/特色文创<br/>空间榜/文化优秀案例等</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><strong>下午</strong></td>
+          <td>圆桌论坛</td>
+          <td>6-9人<br/>主题：文化高质量发展的途径，<br/>从发展方向、产业、人才、实<br/>业等多个角度探讨。</td>
+        </tr>
+        <tr>
+          <td>垂直分论坛（拟）</td>
+          <td>文创设计师论坛<br/>【人民视频】短视频分论坛<br/>文化产业投融资论坛</td>
+        </tr>
+      </table>
+
+      <temple name="titleBar3" headline="案例评选" subtitle="Case selection" src="./src/module/titleBar3.owo"></temple>
+
+    </div>
+
+    <!-- 卡片列表 -->
+    <div class="card-box">
+      <temple name="card" src="./src/module/card.owo"></temple>
+      <temple name="card" src="./src/module/card.owo"></temple>
+      <temple name="card" src="./src/module/card.owo"></temple>
+      <temple name="card" src="./src/module/card.owo"></temple>
+      <temple name="card" src="./src/module/card.owo"></temple>
+    </div>
+  </div>
+
+  <temple name="titleBar4" headline="我要参加" subtitle="I want to take part in it" src="./src/module/titleBar4.owo"></temple>
+
+  <!-- 我要报名 -->
+  <div class="enroll-box">
+    <ul class="enroll">
+      <li>
+        <p>姓名</p>
+        <input type="text"/>
+      </li>
+      <li>
+        <p>单位</p>
+        <input type="text"/>
+      </li>
+      <li>
+        <p>手机号码</p>
+        <input type="text"/>
+      </li>
+      <li>
+        <p>微信号</p>
+        <input type="text"/>
+      </li>
+    </ul>
+    <input type="button" value="提交报名" class="enroll-button"/>
+  </div>
+
+  <temple name="titleBar5" headline="案例评选" subtitle="Case selection" src="./src/module/titleBar5.owo"></temple>
+
+  <div class="home-content address-box">
+    <ul class="survey">
+      <li><strong>指导单位:</strong>人民日报社</li>
+      <li><strong>主办单位:</strong>主办单位</li>
+      <li><strong>协办单位:</strong>中国互联网发展基金会、中国新产业联盟、地方政府等</li>
+    </ul>
+    <temple name="titleBar3" headline="交通指南" subtitle="Traffic guide" src="./src/module/titleBar3.owo"></temple>
+    <!-- 地图 -->
+    <div class="map"></div>
+
+    <temple name="titleBar4" headline="联系我们" subtitle="Contact us." src="./src/module/titleBar4.owo"></temple>
+    <p class="contact-us">北京市朝阳区人民日报社新媒体大楼 13801004510</p>
+    <temple name="titleBar4" headline="往期回顾" subtitle="Past review" src="./src/module/titleBar4.owo"></temple>
+    <div class="review-box">
+      <a href="http://people.com.cn" target="_blank">
+        <img src="@&image1.jpg&"/>
+      </a>
+      <a href="http://people.com.cn" target="_blank">
+        <img src="@&image2.jpg&"/>
+      </a>
+    </div>
+  </div>
+  <temple name="copyright"  src="https://owo.ink/public/1f8067d72f3f1e9f2a8a579f88ac9cc6.page"></temple>
+
+  <!-- 装饰条1 -->
+  <div class="decorate-1"></div>
+  <!-- 装饰条2 -->
+  <div class="decorate-2"></div>
+  <!-- 装饰条3 -->
+  <div class="decorate-3"></div>
+  <!-- 下侧浮动条 -->
+  <temple name="floatBar" src="./src/module/floatBar.owo"></temple>
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+
+    }
+  }
+</script>
+
+
+<style lang="less">
+.home {
+  background-image: url('@&bg.png&');
+  background-size: auto 688px;
+  background-position: center 80px;
+  background-repeat: no-repeat;
+}
+.home-content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.top {
+  width: 1000px;
+  margin: 0 auto;
+  
+  h1 {
+    font-size: 70px;
+    line-height: 130px;
+    padding-top: 20px;
+    font-family: "SimHei";
+  }
+  h3 {
+    text-align: center;
+    width: 560px;
+    font-size: 26px;
+    line-height: 43px;
+    font-family: "SimHei";
+    background-image: url('@&border.svg&');
+    background-size: 100% 100%;
+  }
+  p {
+    width: 580px;
+    font-size: 20px;
+    line-height: 30px;
+    text-indent: 2em;
+    margin: 60px 0;
+  }
+  .more {
+    display: block;
+    width: 165px;
+    height: 45px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 45px;
+    font-family: "SimHei";
+    border: 1px solid black;
+  }
+}
+.title-bar-cBppAj5b, .title-bar-99LEtSoD, .title-bar-wEGOKRO7, .title-bar-cyQFq5wK {
+  margin: 40px 0;
+}
+.survey {
+  font-size: 25px;
+  width: 1000px;
+  margin: 0 auto;
+  strong {
+    margin-right: 8px;
+  }
+  li {
+    line-height: 45px;
+  }
+}
+.title-bar-4FmNC16N {
+  float: left;
+}
+.photo-box {
+  width: 1158px;
+  margin: 0 auto;
+  padding-right: 130px;
+}
+// 黑色的按钮
+.black-button {
+  display: block;
+  height: 100px;
+  width: 450px;
+  border-radius: 50px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  background-color: #040404;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+// 论坛议程表格
+table {
+  width: 1000px;
+  margin: 0 auto;
+  th {
+    line-height: 100px;
+    font-size: 30px;
+  }
+  strong {
+    font-size: 30px;
+  }
+  td {
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+.card-box {
+  .card-M8pVsqaY {
+    margin: 40px auto;
+    
+  }
+  .card-M8pVsqaY:nth-child(1) {
+    background-image: url('@&card-1.jpg&');
+  }
+  .card-M8pVsqaY:nth-child(2) {
+    background-image: url('@&card-2.jpg&');
+  }
+  .card-M8pVsqaY:nth-child(3) {
+    background-image: url('@&card-3.jpg&');
+  }
+  .card-M8pVsqaY:nth-child(4) {
+    background-image: url('@&card-4.jpg&');
+  }
+  .card-M8pVsqaY:nth-child(5) {
+    background-image: url('@&card-5.jpg&');
+  }
+}
+
+// 报名
+.enroll-box {
+  width: 1100px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  background: linear-gradient(to right, #cfa0d6, #ede8cb);
+  .enroll {
+    width: 1000px;
+    height: 405px;
+    border: 2px solid black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding-top: 60px;
+  }
+  .enroll-button {
+    width: 450px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 35px;
+    letter-spacing: 5px;
+    line-height: 100px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  li {
+    display: block;
+    float: left;
+    margin: 15px 37px;
+    p {
+      font-size: 30px;
+      line-height: 50px;
+    }
+    input {
+      height: 60px;
+      width: 405px;
+      border: none;
+      padding: 0 10px;
+      font-size: 20px;
+    }
+  }
+}
+.map {
+  width: 1178px;
+  height: 980px;
+  background-image: url('@&map.png&');
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+.address-box .title-bar-wEGOKRO7 {
+  background-image: url('@&title-bar-5.png&');
+}
+
+.contact-us {
+  font-size: 35px;
+  text-align: center;
+  padding: 40px 0;
+  display: block;
+  line-height: 100px;
+}
+
+.review-box {
+  text-align: center;
+  a {
+    display: inline-block;
+    width: 420px;
+    height: 250px;
+    overflow: hidden;
+    margin: 0 15px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+// 装饰条1
+.decorate-1 {
+  position: absolute;
+  width: 649px;
+  left: -180px;
+  top: 0;
+  z-index: 0;
+  height: 561px;
+  background-image: url('@&decorate.png&');
+}
+.decorate-2 {
+  position: absolute;
+  width: 557px;
+  left: -64px;
+  top: 1000px;
+  z-index: 0;
+  height: 736px;
+  background-repeat: no-repeat;
+  background-image: url('@&decorate-2.png&');
+}
+.decorate-3 {
+  position: absolute;
+  width: 492px;
+  right: -159px;
+  top: 1000px;
+  z-index: 0;
+  height: 1086px;
+  background-image: url('@&decorate-3.png&');
+}
+</style>

@@ -1,0 +1,209 @@
+18:01:35.513 DEBUG 获取到配置信息: 
+18:01:35.513 DEBUG {"basePath":"./","outPut":{"minifyCss":true,"minifyJs":true,"addVersion":true,"embedSize":10,"merge":false},"root":"/src","entry":"home","title":"页面","outFolder":"./dist","resourceFolder":"./src/resource","headList":[{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no"}],"scriptList":[{"name":"swiper","src":"./src/resource/idangerous.swiper2.7.0.min.js"},{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}],"styleList":[{"name":"main","src":"./src/main.css","resource":true},{"name":"swiper","src":"./src/resource/idangerous.swiper2.7.0.css"}],"pageList":[{"main":true,"isPage":true,"name":"home","src":"./src/page/home.page","temple":"<temple name=\"home\" src=\"./src/page/home.page\" isPage=\"true\"></temple>","outerHTML":"<!DOCTYPE html>\r\n<html lang=\"zh-CN\">\r\n  <head>\r\n    <title>页面</title>\r\n    <!-- 页面的元信息 -->\r\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"/>\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no\"/>\r\n    <!-- css-output -->\r\n    <!-- animation-output -->\r\n  </head>\r\n  <body>\r\n    <!-- 页面区域 -->\r\n    <temple name=\"home\" src=\"./src/page/home.page\" isPage=\"true\"></temple>\r\n    <!-- script-output -->\r\n  </body>\r\n</html>"}],"dev":{"basePath":"./","watcher":{"enable":true,"ignored":"./dist/*","depth":99},"outPut":{"minifyCss":false,"minifyJs":false,"addVersion":false},"serverPort":8000,"server":true,"autoReload":true,"remoteDebug":true},"build":{"basePath":"./","outPut":{"minifyCss":true,"minifyJs":true,"addVersion":true,"embedSize":10,"merge":false}}} 
+18:01:35.513 INFO  --------------------------- 开始编译 --------------------------- 
+18:01:35.513 INFO  程序运行目录: D:\work\whcygflt 
+18:01:35.513 INFO  首次启动! 
+18:01:35.513 INFO  生成版本号: 9jgy6mermhn 
+18:01:35.522 INFO  清理资源文件夹: D:\work\whcygflt\dist\static 
+18:01:35.522 INFO  文件夹不存在: D:\work\whcygflt\dist\static 
+18:01:35.523 INFO  创建文件夹: D:\work\whcygflt\dist\static 
+18:01:35.523 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+18:01:35.523 DEBUG 读取网页标题: 页面 
+18:01:35.523 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no"}] 
+18:01:35.523 INFO  开始处理模块: home 
+18:01:35.524 DEBUG 处理模板: ./src/page/home.page 
+18:01:35.603 INFO  开始处理模块: title 
+18:01:35.603 DEBUG 处理模板: ./src/module/title.owo 
+18:01:35.731 DEBUG 缓存模板: title./src/module/title.owo 
+18:01:35.731 DEBUG 模板title处理用时: 128 毫秒! 
+18:01:35.734 INFO  开始处理模块: titleBar 
+18:01:35.734 DEBUG 处理模板: ./src/module/titleBar.owo 
+18:01:35.740 DEBUG 缓存模板: titleBar./src/module/titleBar.owo 
+18:01:35.740 DEBUG 模板titleBar处理用时: 6 毫秒! 
+18:01:35.742 DEBUG 模块 titleBar 因名称重复被重命名为 titleBar1 
+18:01:35.742 INFO  开始处理模块: titleBar1 
+18:01:35.742 DEBUG 处理模板: ./src/module/titleBar.owo 
+18:01:35.748 DEBUG 缓存模板: titleBar1./src/module/titleBar.owo 
+18:01:35.748 DEBUG 模板titleBar1处理用时: 6 毫秒! 
+18:01:35.749 INFO  开始处理模块: peopleBox 
+18:01:35.749 DEBUG 处理模板: ./src/module/peopleBox.owo 
+18:01:35.753 DEBUG 缓存模板: peopleBox./src/module/peopleBox.owo 
+18:01:35.753 DEBUG 模板peopleBox处理用时: 4 毫秒! 
+18:01:35.754 DEBUG 模块 peopleBox 因名称重复被重命名为 peopleBox1 
+18:01:35.754 INFO  开始处理模块: peopleBox1 
+18:01:35.754 DEBUG 使用缓存返回模板: ./src/module/peopleBox.owo 
+18:01:35.756 DEBUG 模块 peopleBox 因名称重复被重命名为 peopleBox1 
+18:01:35.756 INFO  开始处理模块: peopleBox1 
+18:01:35.756 DEBUG 使用缓存返回模板: ./src/module/peopleBox.owo 
+18:01:35.756 INFO  开始处理模块: peopleBox2 
+18:01:35.756 DEBUG 处理模板: ./src/module/peopleBox2.owo 
+18:01:35.760 DEBUG 缓存模板: peopleBox2./src/module/peopleBox2.owo 
+18:01:35.760 DEBUG 模板peopleBox2处理用时: 4 毫秒! 
+18:01:35.761 DEBUG 模块 peopleBox2 因名称重复被重命名为 peopleBox21 
+18:01:35.761 INFO  开始处理模块: peopleBox21 
+18:01:35.761 DEBUG 使用缓存返回模板: ./src/module/peopleBox2.owo 
+18:01:35.762 DEBUG 模块 peopleBox2 因名称重复被重命名为 peopleBox21 
+18:01:35.762 INFO  开始处理模块: peopleBox21 
+18:01:35.762 DEBUG 使用缓存返回模板: ./src/module/peopleBox2.owo 
+18:01:35.762 DEBUG 模块 peopleBox 因名称重复被重命名为 peopleBox1 
+18:01:35.762 INFO  开始处理模块: peopleBox1 
+18:01:35.762 DEBUG 使用缓存返回模板: ./src/module/peopleBox.owo 
+18:01:35.764 DEBUG 模块 peopleBox 因名称重复被重命名为 peopleBox1 
+18:01:35.764 INFO  开始处理模块: peopleBox1 
+18:01:35.764 DEBUG 使用缓存返回模板: ./src/module/peopleBox.owo 
+18:01:35.764 DEBUG 模块 peopleBox 因名称重复被重命名为 peopleBox1 
+18:01:35.764 INFO  开始处理模块: peopleBox1 
+18:01:35.764 DEBUG 使用缓存返回模板: ./src/module/peopleBox.owo 
+18:01:35.765 DEBUG 模块 peopleBox2 因名称重复被重命名为 peopleBox21 
+18:01:35.765 INFO  开始处理模块: peopleBox21 
+18:01:35.765 DEBUG 使用缓存返回模板: ./src/module/peopleBox2.owo 
+18:01:35.766 DEBUG 模块 peopleBox2 因名称重复被重命名为 peopleBox21 
+18:01:35.766 INFO  开始处理模块: peopleBox21 
+18:01:35.766 DEBUG 使用缓存返回模板: ./src/module/peopleBox2.owo 
+18:01:35.766 DEBUG 模块 peopleBox2 因名称重复被重命名为 peopleBox21 
+18:01:35.766 INFO  开始处理模块: peopleBox21 
+18:01:35.766 DEBUG 使用缓存返回模板: ./src/module/peopleBox2.owo 
+18:01:35.769 DEBUG 模块 titleBar 因名称重复被重命名为 titleBar1 
+18:01:35.769 DEBUG 模块 titleBar1 因名称重复被重命名为 titleBar2 
+18:01:35.769 INFO  开始处理模块: titleBar2 
+18:01:35.769 DEBUG 处理模板: ./src/module/titleBar.owo 
+18:01:35.774 DEBUG 缓存模板: titleBar2./src/module/titleBar.owo 
+18:01:35.774 DEBUG 模板titleBar2处理用时: 5 毫秒! 
+18:01:35.775 INFO  开始处理模块: titleBar3 
+18:01:35.775 DEBUG 处理模板: ./src/module/titleBar3.owo 
+18:01:35.780 DEBUG 缓存模板: titleBar3./src/module/titleBar3.owo 
+18:01:35.780 DEBUG 模板titleBar3处理用时: 5 毫秒! 
+18:01:35.780 INFO  开始处理模块: card 
+18:01:35.780 DEBUG 处理模板: ./src/module/card.owo 
+18:01:35.781 INFO  模块: card 不包含script 
+18:01:35.785 DEBUG 缓存模板: card./src/module/card.owo 
+18:01:35.785 DEBUG 模板card处理用时: 5 毫秒! 
+18:01:35.786 INFO  开始处理模块: card 
+18:01:35.786 DEBUG 使用缓存返回模板: ./src/module/card.owo 
+18:01:35.787 INFO  开始处理模块: card 
+18:01:35.787 DEBUG 使用缓存返回模板: ./src/module/card.owo 
+18:01:35.788 INFO  开始处理模块: card 
+18:01:35.788 DEBUG 使用缓存返回模板: ./src/module/card.owo 
+18:01:35.789 INFO  开始处理模块: card 
+18:01:35.790 DEBUG 使用缓存返回模板: ./src/module/card.owo 
+18:01:35.790 INFO  开始处理模块: titleBar4 
+18:01:35.791 DEBUG 处理模板: ./src/module/titleBar4.owo 
+18:01:35.794 DEBUG 缓存模板: titleBar4./src/module/titleBar4.owo 
+18:01:35.794 DEBUG 模板titleBar4处理用时: 3 毫秒! 
+18:01:35.795 INFO  开始处理模块: titleBar5 
+18:01:35.795 DEBUG 处理模板: ./src/module/titleBar5.owo 
+18:01:35.798 DEBUG 缓存模板: titleBar5./src/module/titleBar5.owo 
+18:01:35.798 DEBUG 模板titleBar5处理用时: 3 毫秒! 
+18:01:35.799 DEBUG 模块 titleBar3 因名称重复被重命名为 titleBar31 
+18:01:35.799 INFO  开始处理模块: titleBar31 
+18:01:35.799 DEBUG 处理模板: ./src/module/titleBar3.owo 
+18:01:35.802 DEBUG 缓存模板: titleBar31./src/module/titleBar3.owo 
+18:01:35.802 DEBUG 模板titleBar31处理用时: 3 毫秒! 
+18:01:35.803 DEBUG 模块 titleBar4 因名称重复被重命名为 titleBar41 
+18:01:35.803 INFO  开始处理模块: titleBar41 
+18:01:35.803 DEBUG 处理模板: ./src/module/titleBar4.owo 
+18:01:35.807 DEBUG 缓存模板: titleBar41./src/module/titleBar4.owo 
+18:01:35.807 DEBUG 模板titleBar41处理用时: 4 毫秒! 
+18:01:35.807 DEBUG 模块 titleBar4 因名称重复被重命名为 titleBar41 
+18:01:35.807 DEBUG 模块 titleBar41 因名称重复被重命名为 titleBar42 
+18:01:35.807 INFO  开始处理模块: titleBar42 
+18:01:35.807 DEBUG 处理模板: ./src/module/titleBar4.owo 
+18:01:35.810 DEBUG 缓存模板: titleBar42./src/module/titleBar4.owo 
+18:01:35.810 DEBUG 模板titleBar42处理用时: 3 毫秒! 
+18:01:35.811 INFO  开始处理模块: copyright 
+18:01:35.811 DEBUG 处理模板: https://owo.ink/public/1f8067d72f3f1e9f2a8a579f88ac9cc6.page 
+18:01:35.811 DEBUG 使用文件缓存:D:\work\whcygflt\owo_modules\32ea0f2501c5422de0f9c60a4c78fb93.owo 
+18:01:35.811 INFO  模块: copyright 不包含script 
+18:01:35.813 DEBUG 缓存模板: copyrighthttps://owo.ink/public/1f8067d72f3f1e9f2a8a579f88ac9cc6.page 
+18:01:35.813 DEBUG 模板copyright处理用时: 2 毫秒! 
+18:01:35.814 INFO  开始处理模块: floatBar 
+18:01:35.814 DEBUG 处理模板: ./src/module/floatBar.owo 
+18:01:35.814 INFO  模块: floatBar 不包含script 
+18:01:35.817 DEBUG 缓存模板: floatBar./src/module/floatBar.owo 
+18:01:35.817 DEBUG 模板floatBar处理用时: 3 毫秒! 
+18:01:35.866 DEBUG 缓存模板: home./src/page/home.page 
+18:01:35.866 DEBUG 模板home处理用时: 342 毫秒! 
+18:01:35.867 INFO  文件夹不存在: D:\work\whcygflt\dist\static\resource 
+18:01:35.867 INFO  创建文件夹: D:\work\whcygflt\dist\static\resource 
+18:01:35.868 DEBUG base64处理文件: D:\work\whcygflt\src\resource\title-bar.png 
+18:01:35.868 DEBUG 忽略文件: D:\work\whcygflt\src\resource\title-bar.png 
+18:01:35.869 DEBUG 忽略文件: D:\work\whcygflt\src\resource\title-bar.png 
+18:01:35.869 DEBUG base64处理文件: D:\work\whcygflt\src\resource\title-bar-2.png 
+18:01:35.870 DEBUG base64处理文件: D:\work\whcygflt\src\resource\title-bar-3.png 
+18:01:35.871 DEBUG base64处理文件: D:\work\whcygflt\src\resource\title-bar-4.png 
+18:01:35.871 DEBUG 忽略文件: D:\work\whcygflt\src\resource\title-bar-2.png 
+18:01:35.871 DEBUG 忽略文件: D:\work\whcygflt\src\resource\title-bar-3.png 
+18:01:35.871 DEBUG 忽略文件: D:\work\whcygflt\src\resource\title-bar-3.png 
+18:01:35.871 INFO  读取文件: D:\work\whcygflt\src\resource\border.svg 
+18:01:35.872 DEBUG base64处理文件: D:\work\whcygflt\src\resource\title-bar-5.png 
+18:01:35.873 DEBUG 处理资源: D:\work\whcygflt\src\resource\people-1.png,D:\work\whcygflt\src\resource\people-2.png,D:\work\whcygflt\src\resource\bg.png,D:\work\whcygflt\src\resource\card-1.jpg,D:\work\whcygflt\src\resource\card-2.jpg,D:\work\whcygflt\src\resource\card-3.jpg,D:\work\whcygflt\src\resource\card-4.jpg,D:\work\whcygflt\src\resource\card-5.jpg,D:\work\whcygflt\src\resource\map.png,D:\work\whcygflt\src\resource\decorate.png,D:\work\whcygflt\src\resource\decorate-2.png,D:\work\whcygflt\src\resource\decorate-3.png 
+18:01:35.874 INFO  css中的资源处理完毕! 
+18:01:35.874 DEBUG 使用postcss处理样式，使用了3个插件! 
+18:01:35.892 INFO  正在处理script! 
+18:01:35.892 INFO  工程中只有一个页面! 
+18:01:35.892 DEBUG 页面中不包含切换动画! 
+18:01:36.624 INFO  文件夹不存在: D:\work\whcygflt\dist\static\js 
+18:01:36.625 INFO  创建文件夹: D:\work\whcygflt\dist\static\js 
+18:01:36.642 INFO  js中的资源处理完毕! 
+18:01:36.642 DEBUG 处理引用脚本: [{"name":"swiper","src":"./src/resource/idangerous.swiper2.7.0.min.js"},{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+18:01:36.642 DEBUG 外部脚本数量: 2 
+18:01:36.643 DEBUG 处理脚本: swiper 
+18:01:36.643 DEBUG 不使用bable处理脚本! 
+18:01:36.643 INFO  读取文件: D:\work\whcygflt\src\resource\idangerous.swiper2.7.0.min.js 
+18:01:36.643 DEBUG 处理脚本: jquery1.11.0 
+18:01:36.643 DEBUG 网络脚本: jquery1.11.0 
+18:01:36.643 DEBUG 完成外部脚本引用处理! 
+18:01:36.643 DEBUG 输出scriptData 
+18:01:36.643 DEBUG 判断是否可以输出Html! 
+18:01:36.643 DEBUG 还有没有经过处理的资源! 
+18:01:36.860 INFO  读取成功: D:\work\whcygflt\src\resource\border.svg 
+18:01:36.876 INFO  写入文件: D:\work\whcygflt\dist\static\resource\border.svg 
+18:01:36.876 INFO  读取成功: D:\work\whcygflt\src\resource\idangerous.swiper2.7.0.min.js 
+18:01:36.893 INFO  写入文件: D:\work\whcygflt\dist\static\js\swiper.js 
+18:01:37.433 INFO  使用postcss处理完毕! 用时: 1559 毫秒 
+18:01:37.433 DEBUG 需要经过特殊处理的css: [["[template=title] .title-bar ",".title-bar[template=title] "],["[template=title] .title-bar{",".title-bar[template=title]{"],["[template=title] div","div[template=title] "],["[template=title] div{","div[template=title]{"],["[template=titleBar] .title-bar-cBppAj5b ",".title-bar-cBppAj5b[template=titleBar] "],["[template=titleBar] .title-bar-cBppAj5b{",".title-bar-cBppAj5b[template=titleBar]{"],["[template=titleBar] div","div[template=titleBar] "],["[template=titleBar] div{","div[template=titleBar]{"],["[template=titleBar1] .title-bar-cBppAj5b ",".title-bar-cBppAj5b[template=titleBar1] "],["[template=titleBar1] .title-bar-cBppAj5b{",".title-bar-cBppAj5b[template=titleBar1]{"],["[template=titleBar1] div","div[template=titleBar1] "],["[template=titleBar1] div{","div[template=titleBar1]{"],["[template=peopleBox] .title-bar-4FmNC16N ",".title-bar-4FmNC16N[template=peopleBox] "],["[template=peopleBox] .title-bar-4FmNC16N{",".title-bar-4FmNC16N[template=peopleBox]{"],["[template=peopleBox] div","div[template=peopleBox] "],["[template=peopleBox] div{","div[template=peopleBox]{"],["[template=peopleBox2] .title-bar-4FmNC16N ",".title-bar-4FmNC16N[template=peopleBox2] "],["[template=peopleBox2] .title-bar-4FmNC16N{",".title-bar-4FmNC16N[template=peopleBox2]{"],["[template=peopleBox2] div","div[template=peopleBox2] "],["[template=peopleBox2] div{","div[template=peopleBox2]{"],["[template=titleBar2] .title-bar-cBppAj5b ",".title-bar-cBppAj5b[template=titleBar2] "],["[template=titleBar2] .title-bar-cBppAj5b{",".title-bar-cBppAj5b[template=titleBar2]{"],["[template=titleBar2] div","div[template=titleBar2] "],["[template=titleBar2] div{","div[template=titleBar2]{"],["[template=titleBar3] .title-bar-99LEtSoD ",".title-bar-99LEtSoD[template=titleBar3] "],["[template=titleBar3] .title-bar-99LEtSoD{",".title-bar-99LEtSoD[template=titleBar3]{"],["[template=titleBar3] div","div[template=titleBar3] "],["[template=titleBar3] div{","div[template=titleBar3]{"],["[template=card] .card-M8pVsqaY ",".card-M8pVsqaY[template=card] "],["[template=card] .card-M8pVsqaY{",".card-M8pVsqaY[template=card]{"],["[template=card] div","div[template=card] "],["[template=card] div{","div[template=card]{"],["[template=titleBar4] .title-bar-wEGOKRO7 ",".title-bar-wEGOKRO7[template=titleBar4] "],["[template=titleBar4] .title-bar-wEGOKRO7{",".title-bar-wEGOKRO7[template=titleBar4]{"],["[template=titleBar4] div","div[template=titleBar4] "],["[template=titleBar4] div{","div[template=titleBar4]{"],["[template=titleBar5] .title-bar-cyQFq5wK ",".title-bar-cyQFq5wK[template=titleBar5] "],["[template=titleBar5] .title-bar-cyQFq5wK{",".title-bar-cyQFq5wK[template=titleBar5]{"],["[template=titleBar5] div","div[template=titleBar5] "],["[template=titleBar5] div{","div[template=titleBar5]{"],["[template=titleBar31] .title-bar-99LEtSoD ",".title-bar-99LEtSoD[template=titleBar31] "],["[template=titleBar31] .title-bar-99LEtSoD{",".title-bar-99LEtSoD[template=titleBar31]{"],["[template=titleBar31] div","div[template=titleBar31] "],["[template=titleBar31] div{","div[template=titleBar31]{"],["[template=titleBar41] .title-bar-wEGOKRO7 ",".title-bar-wEGOKRO7[template=titleBar41] "],["[template=titleBar41] .title-bar-wEGOKRO7{",".title-bar-wEGOKRO7[template=titleBar41]{"],["[template=titleBar41] div","div[template=titleBar41] "],["[template=titleBar41] div{","div[template=titleBar41]{"],["[template=titleBar42] .title-bar-wEGOKRO7 ",".title-bar-wEGOKRO7[template=titleBar42] "],["[template=titleBar42] .title-bar-wEGOKRO7{",".title-bar-wEGOKRO7[template=titleBar42]{"],["[template=titleBar42] div","div[template=titleBar42] "],["[template=titleBar42] div{","div[template=titleBar42]{"],["[template=copyright] .copyright-box ",".copyright-box[template=copyright] "],["[template=copyright] .copyright-box{",".copyright-box[template=copyright]{"],["[template=copyright] footer","footer[template=copyright] "],["[template=copyright] footer{","footer[template=copyright]{"],["[template=floatBar] .float-bar ",".float-bar[template=floatBar] "],["[template=floatBar] .float-bar{",".float-bar[template=floatBar]{"],["[template=floatBar] div","div[template=floatBar] "],["[template=floatBar] div{","div[template=floatBar]{"]] 
+18:01:37.434 INFO  文件夹不存在: D:\work\whcygflt\dist\static\css 
+18:01:37.435 INFO  创建文件夹: D:\work\whcygflt\dist\static\css 
+18:01:37.435 INFO  开始处理附属css中的资源 
+18:01:37.435 INFO  附属css中的资源处理完毕! 
+18:01:37.435 INFO  读取文件: D:\work\whcygflt\src\resource\idangerous.swiper2.7.0.css 
+18:01:37.435 INFO  附属css中的资源不需要处理! 
+18:01:37.435 DEBUG 判断是否可以输出Html! 
+18:01:37.435 DEBUG 准备输出html! 
+18:01:37.435 DEBUG base64处理文件: D:\work\whcygflt\src\resource\logo.png 
+18:01:37.435 DEBUG 忽略文件: D:\work\whcygflt\src\resource\people.jpg 
+18:01:37.435 DEBUG 忽略文件: D:\work\whcygflt\src\resource\people.jpg 
+18:01:37.435 DEBUG 忽略文件: D:\work\whcygflt\src\resource\people.jpg 
+18:01:37.435 DEBUG 忽略文件: D:\work\whcygflt\src\resource\people.jpg 
+18:01:37.435 DEBUG 忽略文件: D:\work\whcygflt\src\resource\people.jpg 
+18:01:37.435 DEBUG 忽略文件: D:\work\whcygflt\src\resource\people.jpg 
+18:01:37.435 DEBUG 忽略文件: D:\work\whcygflt\src\resource\people.jpg 
+18:01:37.435 DEBUG 忽略文件: D:\work\whcygflt\src\resource\people.jpg 
+18:01:37.435 DEBUG 忽略文件: D:\work\whcygflt\src\resource\people.jpg 
+18:01:37.435 DEBUG 忽略文件: D:\work\whcygflt\src\resource\people.jpg 
+18:01:37.435 DEBUG 忽略文件: D:\work\whcygflt\src\resource\people.jpg 
+18:01:37.435 DEBUG 忽略文件: D:\work\whcygflt\src\resource\logo.png 
+18:01:37.435 DEBUG 处理资源: D:\work\whcygflt\src\resource\people.jpg,D:\work\whcygflt\src\resource\image1.jpg,D:\work\whcygflt\src\resource\image2.jpg 
+18:01:37.436 DEBUG 开始美化html 
+18:01:37.467 INFO  写入文件: D:\work\whcygflt\dist\static\css\owo.main.9jgy6mermhn.css 
+18:01:37.469 INFO  读取成功: D:\work\whcygflt\src\main.css 
+18:01:37.469 INFO  读取成功: D:\work\whcygflt\src\resource\idangerous.swiper2.7.0.css 
+18:01:37.473 INFO  写入文件: D:\work\whcygflt\dist\static\css\main.css 
+18:01:37.475 INFO  写入文件: D:\work\whcygflt\dist\static\css\swiper.css 
+18:01:37.483 DEBUG 文件处理成功: 
+18:01:37.483 DEBUG D:\work\whcygflt\dist\static\resource\people-1.png 
+18:01:37.483 DEBUG D:\work\whcygflt\dist\static\resource\people-2.png 
+18:01:37.483 DEBUG D:\work\whcygflt\dist\static\resource\bg.png 
+18:01:37.483 DEBUG D:\work\whcygflt\dist\static\resource\card-1.jpg 
+18:01:37.483 DEBUG D:\work\whcygflt\dist\static\resource\card-2.jpg 
+18:01:37.483 DEBUG D:\work\whcygflt\dist\static\resource\card-3.jpg 
+18:01:37.483 DEBUG D:\work\whcygflt\dist\static\resource\card-4.jpg 
+18:01:37.483 DEBUG D:\work\whcygflt\dist\static\resource\card-5.jpg 
+18:01:37.483 DEBUG D:\work\whcygflt\dist\static\resource\map.png 
+18:01:37.483 DEBUG D:\work\whcygflt\dist\static\resource\decorate.png 
+18:01:37.483 DEBUG D:\work\whcygflt\dist\static\resource\decorate-2.png 
+18:01:37.483 DEBUG D:\work\whcygflt\dist\static\resource\decorate-3.png 
+18:01:37.494 DEBUG 文件处理成功: 
+18:01:37.494 DEBUG D:\work\whcygflt\dist\static\resource\people.jpg 
+18:01:37.494 DEBUG D:\work\whcygflt\dist\static\resource\image1.jpg 
+18:01:37.494 DEBUG D:\work\whcygflt\dist\static\resource\image2.jpg 

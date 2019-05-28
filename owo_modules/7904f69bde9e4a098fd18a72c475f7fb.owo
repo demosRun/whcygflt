@@ -1,0 +1,30 @@
+<template>
+  <footer>
+    <div class="copyright">
+      <p>{{prop.mainText}}</p>
+      <p>{{prop.subsidiaryText}}</p>
+    </div>
+  </footer>
+</template>
+
+<style lang="">
+  footer {
+    height: {{prop.height}}px;
+    color: {{prop.color}};
+    font-size: {{prop.fontSize}}px;
+    position: relative;
+    background-color: {{prop.bgColor}};
+  }
+  .copyright {
+    width: 500px;
+    height: 100px;
+    line-height: {{prop.lineHeight}}px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+</style>

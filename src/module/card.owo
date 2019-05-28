@@ -1,0 +1,45 @@
+<template>
+  <div class="card-M8pVsqaY">
+    <strong>2019-2020 城市文化优秀案例展示</strong>
+    <p>Demonstration of Excellent Case of Vitalizing Rural "Rural Culture" by Culture from 2019 to 2020</p>
+    <a href="#">点击进入 ></a>
+  </div>
+</template>
+
+<style lang="less">
+.card-M8pVsqaY {
+  width: 970px;
+  height: 136px;
+  padding: 50px 0;
+  padding-left: 140px;
+  position: relative;
+  background-repeat: no-repeat;
+}
+strong {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "SimHei";
+  margin-bottom: 20px;
+  display: block;
+}
+p {
+  font-size: 20px;
+  line-height: 30px;
+  width: 600px;
+}
+a {
+  display: block;
+  width: 130px;
+  line-height: 60px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  right: 60px;
+  top: 0;
+  bottom: 0;
+  height: 60px;
+  margin: auto;
+}
+</style>
