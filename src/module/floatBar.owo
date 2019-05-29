@@ -3,8 +3,8 @@
     <div class="bar">
       <img src="@&logo.png&"/>
       <div class="button-box">
-        <a href="http://people.com.cn">我要参加</a>
-        <a href="http://people.com.cn">人民网文创</a>
+        <a href="http://people.com.cn" class="button-1">我要参加</a>
+        <a href="http://people.com.cn" class="button-2">人民网文创</a>
       </div>
       
     </div>
@@ -19,6 +19,8 @@
   bottom: 0;
   width: 100%;
   padding: 30px 0;
+  z-index: 999;
+  opacity: 0.9;
 }
 .bar {
   width: 1000px;
@@ -41,5 +43,62 @@ a {
 }
 a:hover {
   color: white;
+}
+
+// 了解更多按钮
+
+.button-box a {
+  display: inline-block;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+.button-box a:before {
+  content: '';
+  background: #148f77;
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  transform: translate(-1000px, -400px) rotate(130deg);
+  transition: all 700ms ease;
+}
+
+.button-box .button-1:after {
+  opacity: 0;
+  content: '我要参加';
+  color: white;
+  font-size: 26px;
+  position: relative;
+  z-index: 100;
+  transition: all 800ms ease;
+  font-weight: 200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button-box .button-2:after {
+  opacity: 0;
+  content: '人民网文创';
+  color: white;
+  font-size: 26px;
+  position: relative;
+  z-index: 100;
+  transition: all 800ms ease;
+  font-weight: 200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button-box a:hover:after {
+  opacity: 1;
+}
+.button-box a:hover:before {
+  transform: translate(-200px, -400px) rotate(130deg);
 }
 </style>

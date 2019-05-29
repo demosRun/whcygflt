@@ -23,10 +23,6 @@ module.exports = {
   // 使用到的外部脚本清单
   scriptList: [
     {
-      name: "swiper",
-      src: "./src/resource/idangerous.swiper2.7.0.min.js"
-    },
-    {
       name: "jquery1.11.0",
       src: "http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"
     }
@@ -37,10 +33,6 @@ module.exports = {
       name: "main",
       src: "./src/main.css",
       resource: true
-    },
-    {
-      name: "swiper",
-      src: "./src/resource/idangerous.swiper2.7.0.css"
     }
   ],
   // 页面清单

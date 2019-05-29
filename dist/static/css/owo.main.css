@@ -113,8 +113,8 @@ a:link, a:visited {
   line-height: 22px;
   position: absolute;
   left: 0;
-  right: 53px;
-  width: 250px;
+  right: 95px;
+  width: 300px;
   text-align: right;
   margin: 0 auto;
   bottom: 2px;
@@ -147,8 +147,8 @@ a:link, a:visited {
   line-height: 22px;
   position: absolute;
   left: 0;
-  right: 53px;
-  width: 250px;
+  right: 95px;
+  width: 300px;
   text-align: right;
   margin: 0 auto;
   bottom: 2px;
@@ -253,8 +253,8 @@ a:link, a:visited {
   line-height: 22px;
   position: absolute;
   left: 0;
-  right: 53px;
-  width: 250px;
+  right: 95px;
+  width: 300px;
   text-align: right;
   margin: 0 auto;
   bottom: 2px;
@@ -509,7 +509,7 @@ a:link, a:visited {
   color: #1b1b1b;
   letter-spacing: 3px;
 }
-footer[template=copyright]  {
+footer[template=copyright] {
   height: 170px;
   color: #000000;
   font-size: 12px;
@@ -540,6 +540,8 @@ footer[template=copyright]  {
   bottom: 0;
   width: 100%;
   padding: 30px 0;
+  z-index: 999;
+  opacity: 0.9;
 }
 
 [template=floatBar] .bar {
@@ -567,6 +569,65 @@ footer[template=copyright]  {
 [template=floatBar] a:hover {
   color: white;
 }
+
+[template=floatBar] .button-box a {
+  display: inline-block;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+[template=floatBar] .button-box a:before {
+  content: '';
+  background: #148f77;
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  -webkit-transform: translate(-1000px, -400px) rotate(130deg);
+          transform: translate(-1000px, -400px) rotate(130deg);
+  transition: all 700ms ease;
+}
+
+[template=floatBar] .button-box .button-1:after {
+  opacity: 0;
+  content: '我要参加';
+  color: white;
+  font-size: 26px;
+  position: relative;
+  z-index: 100;
+  transition: all 800ms ease;
+  font-weight: 200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+[template=floatBar] .button-box .button-2:after {
+  opacity: 0;
+  content: '人民网文创';
+  color: white;
+  font-size: 26px;
+  position: relative;
+  z-index: 100;
+  transition: all 800ms ease;
+  font-weight: 200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+[template=floatBar] .button-box a:hover:after {
+  opacity: 1;
+}
+
+[template=floatBar] .button-box a:hover:before {
+  -webkit-transform: translate(-200px, -400px) rotate(130deg);
+          transform: translate(-200px, -400px) rotate(130deg);
+}
 .home {
   background-image: url('../resource/bg.png');
   background-size: auto 688px;
@@ -577,12 +638,12 @@ footer[template=copyright]  {
 .home-content {
   width: 1200px;
   margin: 0 auto;
-  padding: 80px 0;
 }
 
 [template=home] .top {
   width: 1000px;
   margin: 0 auto;
+  padding-top: 80px;
 }
 
 [template=home] .top h1 {
@@ -612,20 +673,21 @@ footer[template=copyright]  {
 
 [template=home] .top .more {
   display: block;
-  width: 165px;
+  width: 135px;
   height: 45px;
   font-size: 18px;
   text-align: center;
   line-height: 45px;
   font-family: "SimHei";
-  border: 1px solid black;
+  position: relative;
+  color: #201e1e;
 }
 
 [template=home] .title-bar-cBppAj5b,
 [template=home] .title-bar-99LEtSoD,
 [template=home] .title-bar-wEGOKRO7,
 [template=home] .title-bar-cyQFq5wK {
-  margin: 40px 0;
+  margin: 50px 0;
 }
 
 [template=home] .survey {
@@ -635,7 +697,7 @@ footer[template=copyright]  {
 }
 
 [template=home] .survey strong {
-  margin-right: 8px;
+  margin-right: 20px;
 }
 
 [template=home] .survey li {
@@ -809,7 +871,7 @@ footer[template=copyright]  {
 [template=home] .decorate-1 {
   position: absolute;
   width: 649px;
-  left: -180px;
+  left: -250px;
   top: 0;
   z-index: 0;
   height: 561px;
@@ -909,46 +971,73 @@ footer[template=copyright]  {
   background-image: url('../resource/decorate-3.png');
 }
 
-[template=home] .button {
-  display: inline-block;
-  margin: auto;
-  border: none;
-  position: relative;
-  overflow: hidden;
+[template=home] .more svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-dasharray: 0, 0, 480px, 480px;
+  transition: stroke-dasharray 0.3s;
 }
 
-[template=home] .button:before {
-  content: '';
-  background: #148f77;
-  width: 800px;
-  height: 600px;
-  position: absolute;
-  -webkit-transform: translate(-1000px, -400px) rotate(130deg);
-          transform: translate(-1000px, -400px) rotate(130deg);
-  transition: all 700ms ease;
-}
-
-[template=home] .button:after {
-  opacity: 0;
-  content: '了解一下';
-  color: white;
-  font-size: 20px;
-  position: relative;
-  z-index: 100;
-  transition: all 800ms ease;
-  font-weight: 200;
+[template=home] .more span {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  line-height: 45px;
 }
 
-[template=home] .button:hover:after {
-  opacity: 1;
+[template=home] .more:hover,
+[template=home] .more:focus {
+  color: #201e1e;
 }
 
-[template=home] .button:hover:before {
-  -webkit-transform: translate(-200px, -400px) rotate(130deg);
-          transform: translate(-200px, -400px) rotate(130deg);
+[template=home] .more:hover svg,
+[template=home] .more:focus svg {
+  stroke-dasharray: 180px, 300px;
+}
+
+[template=home] .enroll-success-box {
+  width: 600px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 156;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+[template=home] .enroll-success-box .enroll-success {
+  color: white;
+  line-height: 40px;
+  font-size: 26px;
+  text-align: center;
+  height: 160px;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+[template=home] .enroll-success-box h1 {
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+}
+
+[template=home] .enroll-success-box .close {
+  width: 45px;
+  position: absolute;
+  height: 45px;
+  background-size: 45px;
+  right: 10px;
+  top: 10px;
+  background-image: url('../resource/close.png');
 }

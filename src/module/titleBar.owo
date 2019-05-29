@@ -37,8 +37,8 @@
     line-height: 22px;
     position: absolute;
     left: 0;
-    right: 53px;
-    width: 250px;
+    right: 95px;
+    width: 300px;
     text-align: right;
     margin: 0 auto;
     bottom: 2px;

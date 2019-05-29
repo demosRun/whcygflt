@@ -1,5 +1,5 @@
 // build by owo frame!
-// Wed May 29 2019 01:15:15 GMT+0800 (GMT+08:00)
+// Wed May 29 2019 13:15:43 GMT+0800 (GMT+08:00)
 
 "use strict";
 
@@ -8,6 +8,9 @@ window.owo = {
   script: {
     "home": {
       "created": function created() {},
+      "close": function close() {
+        document.getElementsByClassName('enroll-success-box')[0].style.display = 'none';
+      },
       "template": {
         "title": {
           "data": {
@@ -386,10 +389,14 @@ _owo.handleEvent = function (tempDom, templateName) {
 
     if (tempDom.attributes['template'] && tempDom.attributes['template'].textContent) {
       newTemplateName = tempDom.attributes['template'].textContent;
-    } // console.log(newTemplateName)
+    } // 待修复，多页面情况下可能判断不了是否是页面
 
 
-    _owo.handleEvent(childrenDom, newTemplateName);
+    if (newTemplateName === owo.entry) {
+      _owo.handleEvent(childrenDom);
+    } else {
+      _owo.handleEvent(childrenDom, newTemplateName);
+    }
   }
 }; // 便捷选择器
 

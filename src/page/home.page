@@ -7,7 +7,12 @@
         <h1>文化创意高峰论坛</h1>
         <h3>探索文创新路径  •  发展新势能</h3>
         <p>文化发展进入新时期，人民网作为党和国家治国理政的重要资源，应充分发挥文化辐射平台作用。由人民日报指导，人民网主办的以“文化高质量发展”为主题的文化创意高峰论坛计划于2019年年中举办，邀请政府机构、专家学者、从业人员聚焦全球视野下文化中国的发展，探索文创新路径，发展新势能。论坛上将发布文创榜单，榜单拟按文创热点事件、文创空间等维度，依据权威第三方大数据为基础，资深专家团队专业评审得出。并征集文化优秀案例。</p>
-        <a href="http://people.com.cn" class="more button">了解一下</a>
+        <a href="#" class="more" >
+          <svg viewBox="0 0 180 60">
+            <path d="M180,60 0,60 0,0 180,0z"></path>
+          </svg>
+          <span>了解更多</span>
+        </a>
       </div>
       <temple name="titleBar" headline="论坛概况" subtitle="Forum overview" src="./src/module/titleBar.owo"></temple>
       <!-- 论坛概况区域 -->
@@ -17,7 +22,7 @@
         <li><strong>协办单位:</strong>中国互联网发展基金会、中国新产业联盟、地方政府等</li>
         <li><strong>活动主题:</strong>文化高质量发展</li>
         <li><strong>活动时间:</strong>2019年年中</li>
-        <li><strong>活动地点:</strong>【待定】</li>
+        <li><strong>活动地点:</strong>[ 待定 ]</li>
         <li><strong>参会规模:</strong>200人</li>
       </ul>
 
@@ -44,7 +49,7 @@
       <a href="http://people.com.cn" class="black-button">查看所有参与嘉宾</a>
       <temple name="titleBar" headline="论坛议程" subtitle="Forum agenda" src="./src/module/titleBar.owo"></temple>
       <!-- 论坛议程表格 -->
-      <table border="1" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+      <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
         <tr>
           <th>时间</th>
           <th>会议环节</th>
@@ -110,6 +115,13 @@
         <input type="text"/>
       </li>
     </ul>
+    <div class="enroll-success-box">
+      <div class="enroll-success">
+        <h1>报名成功！</h1>
+        <p>感谢您的参与！<br/>请耐心等待后续通知。</p>
+      </div>
+      <div class="close" @click="close"></div>
+    </div>
     <input type="button" value="提交报名" class="enroll-button"/>
   </div>
 
@@ -167,6 +179,9 @@
   module.exports = {
     created: function () {
 
+    },
+    close: function () {
+      document.getElementsByClassName('enroll-success-box')[0].style.display = 'none'
     }
   }
 </script>
@@ -182,12 +197,11 @@
 .home-content {
   width: 1200px;
   margin: 0 auto;
-  padding: 80px 0;
 }
 .top {
   width: 1000px;
   margin: 0 auto;
-  
+  padding-top: 80px;
   h1 {
     font-size: 70px;
     line-height: 130px;
@@ -212,24 +226,25 @@
   }
   .more {
     display: block;
-    width: 165px;
+    width: 135px;
     height: 45px;
     font-size: 18px;
     text-align: center;
     line-height: 45px;
     font-family: "SimHei";
-    border: 1px solid black;
+    position: relative;
+    color: #201e1e;
   }
 }
 .title-bar-cBppAj5b, .title-bar-99LEtSoD, .title-bar-wEGOKRO7, .title-bar-cyQFq5wK {
-  margin: 40px 0;
+  margin: 50px 0;
 }
 .survey {
   font-size: 25px;
   width: 1000px;
   margin: 0 auto;
   strong {
-    margin-right: 8px;
+    margin-right: 20px;
   }
   li {
     line-height: 45px;
@@ -388,7 +403,7 @@ table {
 .decorate-1 {
   position: absolute;
   width: 649px;
-  left: -180px;
+  left: -250px;
   top: 0;
   z-index: 0;
   height: 561px;
@@ -480,43 +495,68 @@ table {
   background-image: url('@&decorate-3.png&');
 }
 
-// 了解更多按钮
-
-.button {
-  display: inline-block;
-  margin: auto;
-  border: none;
-  position: relative;
-  overflow: hidden;
+// 更多按钮
+.more svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-dasharray: 0, 0, 480px, 480px;
+  transition: stroke-dasharray .3s;
 }
-.button:before {
-  content: '';
-  background: #148f77;
-  width: 800px;
-  height: 600px;
-  position: absolute;
-  transform: translate(-1000px, -400px) rotate(130deg);
-  transition: all 700ms ease;
-}
-.button:after {
-  opacity: 0;
-  content: '了解一下';
-  color: white;
-  font-size: 20px;
-  position: relative;
-  z-index: 100;
-  transition: all 800ms ease;
-  font-weight: 200;
+.more span {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  line-height: 45px;
 }
-.button:hover:after {
-  opacity: 1;
+.more:hover, .more:focus {
+  color: #201e1e;
 }
-.button:hover:before {
-  transform: translate(-200px, -400px) rotate(130deg);
+.more:hover svg, .more:focus svg {
+  stroke-dasharray: 180px, 300px;
+}
+
+// 报名成功
+.enroll-success-box {
+  width: 600px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 156;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  .enroll-success {
+    color: white;
+    line-height: 40px;
+    font-size: 26px;
+    text-align: center;
+    height: 160px;
+    width: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+  }
+  .close {
+    width: 45px;
+    position: absolute;
+    height: 45px;
+    background-size: 45px;
+    right: 10px;
+    top: 10px;
+    background-image: url('@&close.png&');
+  }
 }
 </style>
