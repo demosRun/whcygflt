@@ -73,7 +73,7 @@ module.exports = {
     // 自动重新加载
     autoReload: true,
     // 远程调试
-    remoteDebug: true
+    remoteDebug: false
   },
   // 编译模式配置
   build: {

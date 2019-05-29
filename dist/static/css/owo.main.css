@@ -297,12 +297,16 @@ a:link, a:visited {
   letter-spacing: 3px;
 }
 .card-M8pVsqaY {
-  width: 970px;
+  width: 960px;
   height: 136px;
   padding: 50px 0;
   padding-left: 140px;
   position: relative;
   background-repeat: no-repeat;
+}
+
+.card-M8pVsqaY:hover {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
 
 [template=card] strong {
@@ -562,7 +566,6 @@ footer[template=copyright] {
   line-height: 60px;
   color: white;
   font-size: 25px;
-  float: right;
   margin: 0 10px;
 }
 
@@ -570,11 +573,16 @@ footer[template=copyright] {
   color: white;
 }
 
+[template=floatBar] .button-box {
+  float: right;
+}
+
 [template=floatBar] .button-box a {
   display: inline-block;
   border: none;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
 }
 
 [template=floatBar] .button-box a:before {
@@ -681,6 +689,10 @@ footer[template=copyright] {
   font-family: "SimHei";
   position: relative;
   color: #201e1e;
+}
+
+[template=home] .top .more:hover {
+  color: blueviolet;
 }
 
 [template=home] .title-bar-cBppAj5b,
@@ -1039,5 +1051,6 @@ footer[template=copyright] {
   background-size: 45px;
   right: 10px;
   top: 10px;
+  cursor: pointer;
   background-image: url('../resource/close.png');
 }

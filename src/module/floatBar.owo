@@ -1,12 +1,11 @@
 <template>
   <div class="float-bar">
-    <div class="bar">
+    <div class="bar clear">
       <img src="@&logo.png&"/>
       <div class="button-box">
         <a href="http://people.com.cn" class="button-1">我要参加</a>
         <a href="http://people.com.cn" class="button-2">人民网文创</a>
       </div>
-      
     </div>
   </div>
 </template>
@@ -38,7 +37,6 @@ a {
   line-height: 60px;
   color: white;
   font-size: 25px;
-  float: right;
   margin: 0 10px;
 }
 a:hover {
@@ -46,12 +44,15 @@ a:hover {
 }
 
 // 了解更多按钮
-
+.button-box {
+  float: right;
+}
 .button-box a {
   display: inline-block;
   border: none;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
 }
 .button-box a:before {
   content: '';

@@ -235,6 +235,9 @@
     position: relative;
     color: #201e1e;
   }
+  .more:hover {
+    color: blueviolet;
+  }
 }
 .title-bar-cBppAj5b, .title-bar-99LEtSoD, .title-bar-wEGOKRO7, .title-bar-cyQFq5wK {
   margin: 50px 0;
@@ -556,6 +559,7 @@ table {
     background-size: 45px;
     right: 10px;
     top: 10px;
+    cursor: pointer;
     background-image: url('@&close.png&');
   }
 }
