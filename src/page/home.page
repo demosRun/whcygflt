@@ -524,8 +524,8 @@ table {
 
 // 报名成功
 .enroll-success-box {
-  width: 600px;
-  height: 400px;
+  width: 510px;
+  height: 280px;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 156;
   position: absolute;

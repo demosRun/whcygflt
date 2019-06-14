@@ -19,7 +19,6 @@ body, html, .ox {
 }
 
 a:link, a:visited {
-  color: #333;
   text-decoration: none;
 }
 
@@ -31,6 +30,15 @@ a:link, a:visited {
   display: block;
   visibility: hidden;
   clear: both;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 .title-bar {
@@ -1012,8 +1020,8 @@ footer[template=copyright] {
 }
 
 [template=home] .enroll-success-box {
-  width: 600px;
-  height: 400px;
+  width: 510px;
+  height: 280px;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 156;
   position: absolute;
