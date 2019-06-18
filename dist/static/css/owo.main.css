@@ -1062,3 +1062,77 @@ footer[template=copyright] {
   cursor: pointer;
   background-image: url('../resource/close.png');
 }
+
+.time-axis {
+  width: 890px;
+  height: 1581px;
+  background-image: url('../resource/tree.png');
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+  background-position: 260px;
+  background-repeat: no-repeat;
+}
+
+.time-axis .title {
+  width: 270px;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 5px;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+}
+
+.time-axis .title-1 {
+  position: absolute;
+  left: 540px;
+}
+
+.time-axis .title-2 {
+  position: absolute;
+  top: 1067px;
+  left: 540px;
+}
+
+.time-axis strong {
+  display: block;
+  font-size: 34px;
+  line-height: 40px;
+  padding-bottom: 10px;
+}
+
+.time-axis .part {
+  width: 315px;
+  position: absolute;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.time-axis .part1 {
+  left: 527px;
+  top: 148px;
+}
+
+.time-axis .part2 {
+  left: -65px;
+  text-align: right;
+  top: 360px;
+}
+
+.time-axis .part3 {
+  left: 535px;
+  top: 572px;
+}
+
+.time-axis .part4 {
+  left: -65px;
+  top: 685px;
+  text-align: right;
+}
+
+.time-axis .part5 {
+  left: 545px;
+  top: 1148px;
+  text-align: left;
+}
